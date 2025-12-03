@@ -1,17 +1,57 @@
-<section class="accessibility-statement" aria-labelledby="statement-title">
-        <h2 id="statement-title">Erişilebilirlik Taahhüdü ve Bilgi</h2>
-        <p>
-            Bu web sitesi, herkesin erişimine uygun olacak şekilde tasarlanmıştır. Engelli bireylerin bilgiye eşit erişim hakkını desteklemek amacıyla;
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Aralık Dünya Engelliler Günü</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h1 class="main-text" role="alert">Dünya Engelliler Gününüz Kutlu Olsun</h1>
+        <i class="fas fa-heart heart-icon" aria-hidden="true" style="color: #e30b5c;"></i>
+        
+        <p class="accessibility-note">
+            Bu sayfa, yüksek kontrast ve büyük yazı tipleri kullanılarak tasarlanmıştır.
         </p>
-        <ul>
-            <li>Yüksek kontrastlı renk paleti kullanılmıştır.</li>
-            <li>Yazı tipleri (font-size) büyük ve okunaklı seçilmiştir.</li>
-            <li>Tüm içerik, ekran okuyucular (screen readers) ile uyumlu olacak şekilde semantik HTML yapısıyla oluşturulmuştur.</li>
-        </ul>
-        <p>
-            Erişilebilirlik konusunda bir sorunla karşılaşırsanız veya geri bildirimde bulunmak isterseniz lütfen bize ulaşın.
-        </p>
-    </section>
+        
+        <section class="accessibility-statement" aria-labelledby="statement-title">
+            <h2 id="statement-title">Erişilebilirlik Taahhüdü ve Bilgi</h2>
+            <p>
+                Bu web sitesi, herkesin erişimine uygun olacak şekilde tasarlanmıştır. Engelli bireylerin bilgiye eşit erişim hakkını desteklemek amacıyla;
+            </p>
+            <ul>
+                <li>Yüksek kontrastlı renk paleti kullanılmıştır.</li>
+                <li>Yazı tipleri (font-size) büyük ve okunaklı seçilmiştir.</li>
+                <li>Tüm içerik, ekran okuyucular (screen readers) ile uyumlu olacak şekilde semantik HTML yapısıyla oluşturulmuştur.</li>
+            </ul>
+            <p>
+                Erişilebilirlik konusunda bir sorunla karşılaşırsanız veya geri bildirimde bulunmak isterseniz lütfen bize ulaşın.
+            </p>
+        </section>
 
-    </body>
+        <section class="contact-support" aria-labelledby="support-title">
+            <h2 id="support-title">Destek Olun ve İletişime Geçin</h2>
+            <p>
+                Engelli bireylerin toplumsal yaşama tam katılımı için destek çok önemlidir. Aşağıdaki bağlantıları ziyaret edebilir veya geri bildirimde bulunabilirsiniz:
+            </p>
+            <div class="support-links">
+                <a href="#" class="button primary" aria-label="Engelli STK'larına Bağış Yapma">Bağış Yapın <i class="fas fa-hand-holding-heart"></i></a>
+                <a href="mailto:info@siteniz.com" class="button secondary" aria-label="Bize E-posta Gönderin">Geri Bildirim <i class="fas fa-envelope"></i></a>
+            </div>
+            
+            <p class="note">Not: "Bağış Yapın" butonu için ilgili STK'nın web sitesi adresi eklenmelidir.</p>
+        </section>
+        
+        <div class="secret-interaction">
+            <button id="secretButton" aria-live="polite">Ben engelli değilim ki</button>
+            <p id="secretMessage" class="hidden" role="status"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script> 
+</body>
 </html>
